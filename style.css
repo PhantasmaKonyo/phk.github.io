@@ -184,3 +184,88 @@ footer {
   margin-top: 3rem;
   color: #aaa;
 }
+.portfolio {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.project {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  margin: 0.2rem 0;
+  color: #555;
+}
+
+.project ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  color: #444;
+}
+
+.project ul li {
+  margin-bottom: 0.5rem;
+}
+/* === Blog Post Layout === */
+.blog {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* === Blog Article === */
+.blog-post {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.blog-post h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+  text-align: center;
+}
+
+.blog-post em {
+  color: #999;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.blog-post p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  color: #444;
+}
+
+/* Optional: Make strong tags pop */
+.blog-post strong {
+  color: #000;
+  font-weight: bold;
+}
