@@ -1,3 +1,4 @@
+/*===================================================
 main {
   max-width: 700px;
   margin: 4rem auto;
@@ -42,7 +43,7 @@ a:hover {
   border-left: 8px solid #f5c26b;
   padding: 2rem;
 }
-/* Blog Grid Styles */
+
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -54,7 +55,7 @@ a:hover {
 
 .note {
   display: block;
-  background: #fff7c0; /* Sticky note yellow */
+  background: #fff7c0; 
   padding: 1.5rem;
   border-radius: 12px;
   text-decoration: none;
@@ -79,13 +80,13 @@ a:hover {
   line-height: 1.4;
   color: #555;
 }
-/* Center the header title */
+
 .blog-header {
   text-align: center;
   margin-top: 2rem;
 }
 
-/* Make the back button look like a real button */
+
 .back-button {
   display: inline-block;
   background-color: #f5c26b;
@@ -102,7 +103,7 @@ a:hover {
 .back-button:hover {
   background-color: #f2b94d;
 }
-/* ========== GLOBAL RESET + BASE ========== */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -117,7 +118,7 @@ body {
   padding: 1rem;
 }
 
-/* ========== HEADER ========== */
+
 header {
   background-color: #f5c26b;
   padding: 2rem;
@@ -131,7 +132,7 @@ header h1 {
   color: #fff;
 }
 
-/* ========== NAVIGATION ========== */
+
 nav {
   margin-top: 1rem;
 }
@@ -145,13 +146,13 @@ nav a {
   font-weight: bold;
   margin: 0 0.5rem;
   transition: background 0.2s ease;
-}
+
 
 nav a:hover {
   background: #111;
 }
 
-/* ========== MAIN CONTENT ========== */
+
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -177,7 +178,7 @@ p {
   color: #555;
 }
 
-/* ========== FOOTER ========== */
+
 footer {
   text-align: center;
   font-size: 0.9rem;
@@ -225,7 +226,7 @@ footer {
 .project ul li {
   margin-bottom: 0.5rem;
 }
-/* === Blog Post Layout === */
+
 .blog {
   max-width: 700px;
   margin: 4rem auto;
@@ -233,7 +234,7 @@ footer {
   text-align: center;
 }
 
-/* === Blog Article === */
+
 .blog-post {
   background-color: #fff;
   padding: 2rem;
@@ -264,8 +265,1102 @@ footer {
   color: #444;
 }
 
-/* Optional: Make strong tags pop */
+
 .blog-post strong {
   color: #000;
   font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root {
+	--bg-color: #121212;
+	--text-color: #e0e0e0;
+ 	--accent-color: #7ed957;
+	--card-bg: #1e1e1e; 
+}
+
+  
+
+body.light-mode {
+  --bg-color: #fefefe;
+  --text-color: #222222;
+  --accent-color: #2b9348;
+  --card-bg: #f0f0f0;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.toggle-container {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.toggle-button {
+  background: none;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.toggle-button:hover {
+  background: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: var(--text-color);
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+
+.about {
+  margin-bottom: 3rem;
+}
+
+.about h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+
+.skills {
+  margin-bottom: 3rem;
+}
+
+.skills h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-grid span {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-weight: 500;
+}
+
+
+.portfolio {
+  margin-bottom: 3rem;
+}
+
+.portfolio h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.portfolio-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.portfolio-img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+
+
+.blog-preview h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.blog-preview ul {
+  list-style: none;
+}
+
+.blog-preview li {
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+
+.contact {
+  margin-top: 4rem;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+.contact h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.contact p a {
+  margin: 0 0.5rem;
+}
+
+   Global Reset & Theme Variables
+===================================================
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #7ed957;
+  --card-bg: #1e1e1e;
+}
+
+body.light-mode {
+	--bg-color: #fefefe; 
+--text-color: #222222; 
+--accent-color: #2b9348; 
+--card-bg: #f0f0f0; }
+
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ===================================================
+   Toggle Button
+===================================================
+.toggle-container {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.toggle-button {
+  background: none;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.toggle-button:hover {
+  background: var(--accent-color);
+  color: var(--bg-color);
+}
+
+/* ===================================================
+   Layout Container
+=================================================== 
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ===================================================
+   Hero Section
+=================================================== 
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: var(--text-color);
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+/* ===================================================
+   About Section
+=================================================== 
+.about {
+  margin-bottom: 3rem;
+}
+
+.about h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+/* ===================================================
+   Skills Section
+=================================================== 
+.skills {
+  margin-bottom: 3rem;
+}
+
+.skills h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-grid span {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+/* ===================================================
+   Portfolio Section
+=================================================== 
+.portfolio {
+  margin-bottom: 3rem;
+}
+
+.portfolio h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.portfolio-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* ===================================================
+   Blog Preview
+=================================================== 
+.blog-preview h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.blog-preview ul {
+  list-style: none;
+}
+
+.blog-preview li {
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+/* ===================================================
+   Contact Footer
+===================================================
+.contact {
+  margin-top: 4rem;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+.contact h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.contact p a {
+  margin: 0 0.5rem;
+}
+/* ===================================================
+   Global Reset & Theme Variables
+===================================================
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #7ed957;
+  --card-bg: #1e1e1e;
+}
+
+body.light-mode {
+  --bg-color: #fefefe;
+  --text-color: #222222;
+  --accent-color: #2b9348;
+  --card-bg: #f0f0f0;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ===================================================
+   Toggle Button
+===================================================
+.toggle-container {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.toggle-button {
+  background: none;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.toggle-button:hover {
+  background: var(--accent-color);
+  color: var(--bg-color);
+}
+
+/* ===================================================
+   Blog Link Button
+===================================================
+.blog-button {
+  display: inline-block;
+  margin: 2rem auto;
+  padding: 0.6rem 1.4rem;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.blog-button:hover {
+  background-color: #63b84c;
+}
+
+/* ===================================================
+   Layout Container
+===================================================
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ===================================================
+   Hero Section
+=================================================== 
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: var(--text-color);
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+/* ===================================================
+   About Section
+===================================================
+.about {
+  margin-bottom: 3rem;
+}
+
+.about h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+/* ===================================================
+   Skills Section
+===================================================
+.skills {
+  margin-bottom: 3rem;
+}
+
+.skills h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-grid span {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+/* ===================================================
+   Portfolio Section
+===================================================
+.portfolio {
+  margin-bottom: 3rem;
+}
+
+.portfolio h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.portfolio-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* ===================================================
+   Blog Preview
+=================================================== 
+.blog-preview h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.blog-preview ul {
+  list-style: none;
+}
+
+.blog-preview li {
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+/* ===================================================
+   Contact Footer
+=================================================== 
+.contact {
+  margin-top: 4rem;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+.contact h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.contact p a {
+  margin: 0 0.5rem;
+}
+/* ===================================================
+   Global Reset & Theme Variables
+=================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #7ed957;
+  --card-bg: #1e1e1e;
+}
+
+body.light-mode {
+  --bg-color: #fefefe;
+  --text-color: #222222;
+  --accent-color: #2b9348;
+  --card-bg: #f0f0f0;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ===================================================
+   Toggle Button
+=================================================== */
+.toggle-container {
+  text-align: right;
+  margin: 2rem 0 1rem;
+}
+
+
+.toggle-button {
+  background: none;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.toggle-button:hover {
+  background: var(--accent-color);
+  color: var(--bg-color);
+}
+
+/* ===================================================
+   Blog Link Button
+=================================================== */
+.blog-button {
+  display: inline-block;
+  margin: 2rem auto;
+  padding: 0.6rem 1.4rem;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.blog-button:hover {
+  background-color: #63b84c;
+}
+
+/* ===================================================
+   Layout Container
+=================================================== */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ===================================================
+   Hero Section
+=================================================== */
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: var(--text-color);
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+/* ===================================================
+   About Section
+=================================================== */
+.about {
+  margin-bottom: 3rem;
+}
+
+.about h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+/* ===================================================
+   Skills Section
+=================================================== */
+.skills {
+  margin-bottom: 3rem;
+}
+
+.skills h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-grid span {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+/* ===================================================
+   Portfolio Section
+=================================================== */
+.portfolio {
+  margin-bottom: 3rem;
+}
+
+.portfolio h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.portfolio-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* ===================================================
+   Blog Preview
+=================================================== */
+.blog-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+.blog-header nav {
+  margin-top: 0.5rem;
+}
+
+.back-button {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid var(--accent-color);
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+
+.blog-preview h3 {
+  text-align: center;
+}
+
+.blog-preview h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.blog-preview ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 0;
+}
+
+.blog-preview li {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.blog-preview li:hover {
+  transform: translateY(-4px);
+}
+
+.blog-preview li a {
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+  color: var(--accent-color);
+}
+
+/* ===================================================
+   Contact Footer
+=================================================== */
+.contact {
+  margin-top: 4rem;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+.contact h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.contact p a {
+  margin: 0 0.5rem;
+}
+/* ===================================================
+   Blog Post Page Styling
+=================================================== */
+.blog-post {
+  max-width: 750px;
+  margin: 3rem auto;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.blog-post h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.blog-post p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.blog-post ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.blog-post ul li {
+  margin-bottom: 0.5rem;
+}
+
+.blog-post a {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid var(--accent-color);
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.blog-post a:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+.toggle-container {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.blog-post a {
+  display: inline-block;
+  margin: 2rem auto 0;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid var(--accent-color);
+  padding: 0.4rem 1.2rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.blog-post {
+  text-align: center;
+}
+
+.blog-post {
+  text-align: center;
+}
+.blog-post a {
+  display: inline-block;
+  margin: 2rem auto 0;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid var(--accent-color);
+  padding: 0.4rem 1.2rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
