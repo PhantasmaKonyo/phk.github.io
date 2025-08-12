@@ -1364,3 +1364,66 @@ button {
   border-radius: 6px;
   transition: background-color 0.3s ease;
 }
+
+/* ===================================================
+   Home Page Enhancements
+=================================================== */
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-weight: 600;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.top-nav nav a {
+  margin-left: 1.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.top-nav nav a:hover {
+  color: var(--accent-color);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, var(--card-bg) 0%, rgba(0, 0, 0, 0.6) 100%);
+  border-radius: 12px;
+}
+
+.hero-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+  border: 4px solid var(--accent-color);
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #5cbf3a;
+  color: var(--bg-color);
+}
