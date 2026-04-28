@@ -227,3 +227,101 @@ h3 {
     height: 230px;
   }
 }
+
+.eyebrow {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.45rem;
+}
+
+.portfolio-section-head {
+  margin-bottom: 1rem;
+}
+
+.portfolio-section-head h2 {
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.carousel-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(280px, 1fr);
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+}
+
+.carousel-track::-webkit-scrollbar {
+  height: 10px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+  background: #3d3d3d;
+  border-radius: 999px;
+}
+
+.carousel-card {
+  background: #262626;
+  border-radius: 12px;
+  overflow: hidden;
+  color: var(--text-color);
+  scroll-snap-align: start;
+  min-height: 320px;
+  border: 1px solid #303030;
+}
+
+.carousel-card:hover {
+  text-decoration: none;
+  border-color: var(--accent-color);
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  background: #121212;
+}
+
+.carousel-copy {
+  padding: 1rem;
+}
+
+.carousel-copy h3 {
+  margin-bottom: 0.4rem;
+}
+
+.project-page {
+  padding-top: 1rem;
+}
+
+.project-hero {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.project-hero img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #353535;
+}
+
+@media (max-width: 800px) {
+  .project-hero {
+    grid-template-columns: 1fr;
+  }
+}

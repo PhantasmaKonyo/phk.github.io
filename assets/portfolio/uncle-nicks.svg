@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#dce6f0"/>
+  <rect x="70" y="70" width="760" height="280" rx="18" fill="#f4f0da"/>
+  <rect x="90" y="390" width="700" height="220" rx="18" fill="#d5d2b0"/>
+  <rect x="860" y="80" width="270" height="540" rx="20" fill="#b5cfe1"/>
+  <text x="120" y="170" fill="#1f1f1f" font-family="Georgia" font-size="52">Uncle Nick's Zucchini Relish</text>
+  <text x="120" y="250" fill="#2b2b2b" font-family="Poppins, Arial" font-size="30">Packaging concept preview</text>
+  <circle cx="950" cy="490" r="90" fill="#d8323f"/>
+  <ellipse cx="1040" cy="520" rx="120" ry="65" fill="#7f9168"/>
+</svg>

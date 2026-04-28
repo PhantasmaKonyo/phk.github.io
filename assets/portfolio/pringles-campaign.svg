@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#e8e8e8"/>
+  <rect x="70" y="70" width="680" height="300" rx="18" fill="#ffffff"/>
+  <rect x="780" y="70" width="350" height="250" rx="18" fill="#f2f8f0"/>
+  <rect x="780" y="350" width="350" height="280" rx="18" fill="#cce6f9"/>
+  <text x="120" y="170" fill="#111" font-family="Georgia" font-size="66">Pringles Advertisement</text>
+  <text x="120" y="250" fill="#222" font-family="Poppins, Arial" font-size="30">Consume the Flavour campaign concept</text>
+  <rect x="840" y="110" width="80" height="180" rx="40" fill="#3ca94b"/>
+  <rect x="955" y="110" width="80" height="180" rx="40" fill="#2b9540"/>
+  <rect x="1070" y="110" width="80" height="180" rx="40" fill="#4bb95f"/>
+  <path d="M830 520 C920 420,1010 620,1110 500" fill="none" stroke="#ca3454" stroke-width="22"/>
+</svg>
