@@ -190,25 +190,78 @@ h3 {
   text-align: center;
 }
 
-.blog-header,
 .blog {
   max-width: 900px;
   margin: 1.5rem auto;
   padding: 0 1rem;
 }
 
-.blog-header {
-  text-align: center;
+.blog-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.45rem;
+}
+
+.blog-hero p:last-child {
+  color: var(--muted-text);
+}
+
+.blog-section-head {
+  margin-bottom: 0.8rem;
+}
+
+.blog-section-head h2,
+.blog-preview h2 {
+  color: #fff;
+}
+
+.post-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.post-card {
+  display: block;
+  background: #262626;
+  border: 1px solid #303030;
+  border-radius: 10px;
+  padding: 1rem;
+  color: var(--text-color);
+}
+
+.post-card:hover {
+  border-color: var(--accent-color);
+  text-decoration: none;
+}
+
+.post-card h3 {
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.post-card p:last-child {
+  color: var(--muted-text);
+}
+
+.blog-post {
+  padding: 1.75rem;
+}
+
+.blog-post .back-button {
+  margin-bottom: 1.25rem;
+}
+
+.blog-post h1 {
+  font-size: 2rem;
+  line-height: 1.2;
 }
 
 .blog-post p,
 .blog-post ul,
-.blog-preview ul {
+.blog-preview p {
   margin-top: 0.8rem;
 }
 
-.blog-post ul,
-.blog-preview ul {
+.blog-post ul {
   padding-left: 1.25rem;
 }
 
