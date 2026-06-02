@@ -10,10 +10,13 @@
   <main class="container project-page">
     <a href="../portfolio.html" class="back-button">&larr; Back to Portfolio</a>
     <section class="project-hero">
-      <video class="project-video" controls preload="metadata">
-        <source src="../assets/portfolio/video4.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div class="project-video-shell">
+        <video class="project-video" preload="metadata">
+          <source src="../assets/portfolio/video4.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <button class="project-play-button" type="button" aria-label="Play Brand Story Cut"></button>
+      </div>
       <div>
         <p class="eyebrow">Featured Video</p>
         <h1>Brand Story Cut</h1>
@@ -22,5 +25,6 @@
       </div>
     </section>
   </main>
+  <script src="../video-player.js"></script>
 </body>
 </html>
