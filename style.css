@@ -328,6 +328,24 @@ h3 {
   flex-direction: column;
 }
 
+.video-preview,
+.project-video {
+  background: #121212;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.video-preview {
+  height: 150px;
+}
+
+.project-video {
+  aspect-ratio: 16 / 9;
+  border: 1px solid #353535;
+  border-radius: 10px;
+}
+
 .video-placeholder,
 .project-video-placeholder {
   position: relative;
